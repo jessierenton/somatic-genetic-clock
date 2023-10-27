@@ -1,0 +1,58 @@
+{
+    "times": [
+        4,
+        17
+    ],
+    "fixedmutations": [
+        [
+            [
+                3,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            [
+                16,
+                13,
+                6,
+                11,
+                11
+            ],
+            [
+                20,
+                15,
+                11,
+                15,
+                14,
+                16
+            ]
+        ]
+    ],
+    "input": {
+        "tmax": 30.0,
+        "clonalmutations": 0,
+        "ploidy": 2,
+        "birthrate": 122.0,
+        "maxmodules": 1000,
+        "modulebranching": "withoutreplacement_nomutations",
+        "modulesize": 13,
+        "moranrate": 0.0,
+        "μ": 0.0069,
+        "mutationdist": "poisson",
+        "branchrate": 8.0,
+        "moranincludeself": false,
+        "deathrate": 0.0,
+        "branchinitsize": 7,
+        "type": "MultilevelBranchingMoranInput",
+        "asymmetricrate": 122.0
+    },
+    "seed": 3041510
+}
