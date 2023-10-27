@@ -1,6 +1,8 @@
 # Fixed mutation accumulation
 Data scripts, data and plotting scripts for Figure 3 and Supplementary Figures 2-4 & 6.
 
+*Some data files used in supplementary figures are excluded from the repository due to size contraints but are available on request.
+
 ## Figure 3 and Supplementary Figures 11-12
 
 To produce figure: `julia plot_mainfig.jl`
@@ -42,7 +44,7 @@ To produce figures: `julia plot_supp_compare_r.jl`
 ### Data and scripts:
 
 - directory: `data/fulldist_data/`
-- data: `data_long/`
+- data: `data_long/` (*not included in repository due to size)
 - script: `run_moran_long.sh`
 - submits: `julia --project=$ENV -t 1 run_moran_fulldist.jl $INPUT_ARGS 480 10 100 split data_long`
 - input args: `input.txt`
@@ -54,13 +56,13 @@ To produce figure: `julia plot_supp_grads.jl`
 ### Data and scripts:
 
 Module splitting:
-- directory: `data/fulldist_data/`
-- data: `data_long/` 
+- directory: `data/fulldist_data/` 
+- data: `data_long/` (*not included in repository due to size)
 - see Supp Fig 2-3
 
 Module branching:
 - directory: `data/fulldist_data/`
-- data: `data_long_branching/` 
+- data: `data_long_branching/` (*not included in repository due to size)
 - script: `run_moran_long_branching.sh`
 - submits: `julia --project=$ENV -t 1 run_moran_fulldist.jl $INPUT_ARGS 480 10 20 withoutreplacement_nomutations data_long_branching`
 - input args: `input.txt`
@@ -77,7 +79,7 @@ To produce figure: `julia plot_supp_trajectories.jl`
 ### Data and scripts
 
 - directory `data/fulldist_data/`
-- data: `data_tenyrs/`
+- data: `data_tenyrs/` (*not included in repository due to size)
 - script: `run_moran_tenyrs.sh`
 - submits: `julia --project=$ENV -t 1 run_moran_fulldist.jl $INPUT_ARGS 10 0.1 20 split data_tenyrs`
 - input args: `input.txt`
