@@ -1,0 +1,7 @@
+#birthrate, moranrate, asymmetricrate, N, N0, μ, r, modulebranching, maxmodules
+122  0  122  3  1  0.0069  3  withoutreplacement_nomutations  1000
+122  0  122  3  1  0.0069  4  withoutreplacement_nomutations  1000
+122  0  122  3  1  0.0069  5  withoutreplacement_nomutations  1000
+122  0  122  3  1  0.0069  6  withoutreplacement_nomutations  1000
+122  0  122  3  1  0.0069  7  withoutreplacement_nomutations  1000
+122  0  122  3  1  0.0069  8  withoutreplacement_nomutations  1000
