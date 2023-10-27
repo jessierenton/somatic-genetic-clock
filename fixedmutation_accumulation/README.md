@@ -1,36 +1,36 @@
 # Fixed mutation accumulation
-Data scripts, data and plotting scripts for Figure 3 and Supplementary Figures 2-4 & 6.
+Data scripts, data and plotting scripts for Figure 3 and Supplementary Figures 2-4, 6, 11-12.
 
 *Some data files used in supplementary figures are excluded from the repository due to size contraints but are available on request.
 
 ## Figure 3 and Supplementary Figures 11-12
 
-To produce figure: `julia plot_mainfig.jl`
+To produce figures: `julia plot_mainfig.jl`
 
 ### Data and scripts:
 
-Fig 3a: 
+Fig. 3a: 
   - directory: `data/fulldist_data/`
   - data: `data_branching/`
   - script: `qsub run_moran_branching.sh` 
   - submits `julia --project=$ENV -t 1 run_moran_fulldist.jl $INPUT_ARGS 120 1 20 withoutreplacement data_branching` 
   -  input args: `input.txt`
 
-Fig 3b:
+Fig. 3b and Supplementary Fig. 11a & 12:
   - directory: `data/averaged_data/`
   - data: `data_branch_eelgrass_new/`
   - script: `run_moran_branch_eelgrass_new.sh`
   - submits: `julia --project=$ENV -t 1 run_moran2.jl $INPUT_ARGS 30 0.5 20 data_branch_eelgrass_new`
   - input args: `input_branch_eelgrass.txt`
   
-Fig 3c: 
+Fig. 3c and Supplementary Fig. 11b: 
   - directory: `data/experimental_sampling_data/`
   - data: `data/`
   - script: `qsub run.sh`
   - submits `julia --project=$ENV -t 1 run_experiment_samples.jl $INPUT_ARGS 30 $JOB_ID data` 
   - input args: `input_experimental_samples.txt`
 
-Fig 3c (stars)
+Fig. 3c and Supplementary Fig. 11b (stars)
   - directory: `data/averaged_data/`
   - data: `data_branch_eelgrass_long/X/` (X=0:4)
   - script: `qsub run_moran_branch_eelgrass_long.sh X`
